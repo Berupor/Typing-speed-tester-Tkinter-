@@ -20,7 +20,7 @@ class TypingSpeed:
             data_list = data.split('\n')
             shuffle(data_list)
         for _ in data_list:
-            while len(self.words) < 1:
+            while len(self.words) < 15:
                 self.words.append(choice(data_list))
         self.string = ' '.join([str(item) for item in self.words])
         lbl_text_for_typing['text'] = self.string
